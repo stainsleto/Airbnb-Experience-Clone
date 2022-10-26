@@ -7,6 +7,8 @@ body{
 }
 
 .nav-bar{
+  position: fixed;
+  width:100%;
   padding:30px;
   height:30px;
   background-color: #FFFFFF ;
@@ -46,9 +48,6 @@ body{
 }
 .product-main{
   margin:30px;
-  display:flex;
-  flex-direction:row;
-  gap:15px;
 }
 
 .product-text>p{
@@ -74,4 +73,11 @@ body{
 
 .light-text{
   color: #918E9B;
+}
+
+.card-main{
+  margin:30px;
+  display:flex;
+  flex-direction:row;
+  gap:20px;
 }
