@@ -44,3 +44,34 @@ body{
 #hero-desc{
   font-weight:300;
 }
+.product-main{
+  margin:30px;
+  display:flex;
+  flex-direction:row;
+  gap:15px;
+}
+
+.product-text>p{
+  margin:3px 0px 0px 0px;
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size:15px;
+}
+
+
+#star-image{
+ margin-right:5px;
+}
+
+.product-slider{
+  width:176px;
+  height:235px;
+}
+
+.bold-text{
+  font-weight:700
+}
+
+.light-text{
+  color: #918E9B;
+}
