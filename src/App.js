@@ -15,8 +15,10 @@ function App() {
       rating={item.stats.rating}
       reviewCount = {item.stats.reviewCount}
       country = {item.location}
-      title="Life lessons with Katie Zaferes"
+      title={item.title}
       price= {item.price}
+      openSpots = {item.openSpots}
+      location = {item.location}
       />
       
     )
@@ -28,6 +30,7 @@ function App() {
       <Hero />
       <section className="card-main">
         {cards}
+        
       </section>
       
 

@@ -3,8 +3,16 @@ import Star from '../images/star.png';
 
 
 function ProductSlider(props){
+    let currentStatus
+    if ( props.openSpots === 0) {
+        currentStatus = "SOLD OUT"
+    }
+    else if (props.location === "Online"){
+        currentStatus = "ONLINE"
+    }
     return(  
-        <div>
+        <div className="card">
+            {currentStatus && <div className="card--badge">{currentStatus}</div>}
             <img className="product-slider" src= {`../images/${props.img}`} />
             <div className="card-stats">
                 <img id="star-image" src={Star} width="17px"/>
@@ -12,8 +20,8 @@ function ProductSlider(props){
                 <span className="light-text">({props.reviewCount}).</span>
                 <span className="light-text">{props.country}</span>
             </div>
-            <p>{props.title}</p>
-            <p ><span className="bold-text">From ${props.price}</span>/ person</p>
+            <p className="card--title" >{props.title}</p>
+            <p className="card--price"><span className="bold-text">From ${props.price}</span>/ person</p>
             
         </div>
 
