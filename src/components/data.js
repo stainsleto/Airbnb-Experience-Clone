@@ -9,7 +9,8 @@ export default [
             rating: 5.0,
             reviewCount: 6
         },
-        location: "Online",
+        status: "Online",
+        location: "USA",
         openSpots: 0,
     },
     {
@@ -22,7 +23,8 @@ export default [
             rating: 5.0,
             reviewCount: 30
         },
-        location: "Online",
+        status: "Online",
+        location: "USA",
         openSpots: 27,
     },
     {
@@ -35,7 +37,9 @@ export default [
             rating: 4.8,
             reviewCount: 2
         },
+        status: "Offline",
         location: "Norway",
         openSpots: 3,
     }
+    
 ]

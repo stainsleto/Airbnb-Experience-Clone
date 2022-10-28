@@ -4,24 +4,24 @@ import Star from '../images/star.png';
 
 function ProductSlider(props){
     let currentStatus
-    if ( props.openSpots === 0) {
+    if ( props.item.openSpots === 0) {
         currentStatus = "SOLD OUT"
     }
-    else if (props.location === "Online"){
+    else if (props.item.status === "Online"){
         currentStatus = "ONLINE"
     }
     return(  
         <div className="card">
             {currentStatus && <div className="card--badge">{currentStatus}</div>}
-            <img className="product-slider" src= {`../images/${props.img}`} />
+            <img className="product-slider" src= {`../images/${props.item.coverImg}`} />
             <div className="card-stats">
-                <img id="star-image" src={Star} width="17px"/>
-                <span>{props.rating}</span>
-                <span className="light-text">({props.reviewCount}).</span>
-                <span className="light-text">{props.country}</span>
+                <img id="star-image" src={Star} width="15px"/>
+                <span className="normal-text">{props.item.stats.rating} </span>&nbsp;
+                <span className="light-text">({props.item.stats.reviewCount})&nbsp;🔴</span>
+                <span className="light-text">{props.item.location}</span>
             </div>
-            <p className="card--title" >{props.title}</p>
-            <p className="card--price"><span className="bold-text">From ${props.price}</span>/ person</p>
+            <p className="card--title normal-text" >{props.item.title}</p>
+            <p className="card--price normal-text "><span className="bold-text">From ${props.item.price}</span>/ person</p>
             
         </div>
 
