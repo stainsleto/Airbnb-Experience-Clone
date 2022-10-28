@@ -22,5 +22,6 @@ Made this clone using props in React, to make it Dynamic.
 ## `Follow me`
 
 Follow me in Twitter - @LetoStains
+
 Connect with me in Linkedin - https://www.linkedin.com/in/stains-leto-6a79141a8/
 
